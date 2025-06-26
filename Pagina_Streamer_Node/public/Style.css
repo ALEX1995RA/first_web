@@ -1,0 +1,251 @@
+/* Estilo general */
+body {
+  background: linear-gradient(135deg, #0a0a0a, #1c0033, #000033);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor general */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Intro / Presentación */
+.intro {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #ff00ff;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Redes sociales */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  text-align: center;
+  margin: 40px 0;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.social-grid a {
+  background-color: #ffffff;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-grid a:hover {
+  transform: scale(1.05);
+  background-color: #ff00ff;
+  color: #fff;
+}
+
+.social-grid img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Contenedor de ambos bloques: horizontal */
+/* Contenido de texto */
+.info-box .content {
+  flex: 1;
+  padding-right: 10px;
+}
+
+/* ⬇️ Aquí puedes añadir el nuevo estilo */
+.dia {
+  color: #ff00ff;  /* Puedes cambiar el color aquí */
+  font-weight: bold;
+}
+.categoria {
+  color: #00ffff;  /* Color para las etiquetas del setup */
+  font-weight: bold;
+}
+.agenda-setup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Cada bloque ocupa el 50% */
+.agenda-setup .info-box {
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 15px #ff00ff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Parte de texto */
+.info-box .content {
+  flex: 1;
+  padding-right: 10px;
+  color: #fff;
+}
+
+.info-box .content h2 {
+  color: #ff00ff;
+  margin-bottom: 20px;
+}
+
+.info-box .content ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.info-box .content li {
+  margin-bottom: 8px;
+}
+
+/* Parte de imagen */
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.image-side img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #ff00ff;
+}
+
+/* Clips destacados */
+.clips {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.clips h2 {
+  color: #ff00ff;
+  margin-bottom: 20px;
+}
+
+.clip-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clip-gallery a {
+  display: block;
+  border: 3px solid #ff00ff;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #1a1a1a;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.clip-gallery a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.clip-gallery img {
+  width: 200px;
+  border-radius: 6px;
+}
+
+/* Formulario de contacto */
+.contact {
+  background-color: #1a1a1a;
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #ff00ff;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #ff00ff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #e600e6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f0f0f;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+footer a {
+  color: #ff00ff;
+  text-decoration: none;
+}
